@@ -25,4 +25,17 @@ const images = [
   }
 ];
 
-const element = document.createElement("img");
+const galleryEl = document.querySelector(".gallery");
+
+const elements = images.map((image) => {
+  const ulItem = document.createElement("li");
+  const imageEl = document.createElement("img");
+  imageEl.src = image.url;
+  imageEl.alt = image.alt;
+  imageEl.width = 360;
+  imageEl.classList.add("image");
+  ulItem.append(imageEl);
+  return ulItem;
+})
+
+galleryEl.append(...elements);

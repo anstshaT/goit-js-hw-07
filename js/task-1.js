@@ -1,11 +1,11 @@
 const categories = document.querySelectorAll(".item");
-const nameOfCateg = document.querySelectorAll(".item .title");
 
-const categoriesAmount = categories.length;
-console.log(`Number of categories: ${categoriesAmount}`);
+const amountOfCateg = categories.length; 
+console.log(`Number of categories: ${amountOfCateg}`);
 
-const firstTitle = nameOfCateg[0].textContent;
-//можна спробувати зробити через форб 
-//підвищувати індекс елемента, і потім щоб виводило лайн 7     Як можна зробити щоб виводило назви категорії 
-
-ч
+categories.forEach((categorie) => {
+    const nameOfCateg = categorie.firstElementChild.textContent;
+    const amountOfLi = categorie.querySelectorAll("li").length;
+    console.log(`Category: ${nameOfCateg}`);
+    console.log(`Elements: ${amountOfLi}`);   
+} )
