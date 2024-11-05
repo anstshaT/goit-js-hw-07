@@ -24,3 +24,5 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+const element = document.createElement("img");
