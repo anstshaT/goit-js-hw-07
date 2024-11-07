@@ -32,6 +32,10 @@ img {
 
 /* Task 1*/
 
+#categories {
+  margin-top: 16px;
+}
+
 .item {
   max-width: 392px;
   border-radius: 8px;
@@ -70,8 +74,6 @@ img {
 
 /* Task 2*/
 
-
-
 .gallery {
   display: flex;
   gap: 24px;
@@ -80,6 +82,7 @@ img {
   list-style-type: none;
   width: 1128px;
   overflow: hidden;
+  margin-top: 16px;
 }
 
 .image {
@@ -87,3 +90,24 @@ img {
   object-fit: cover; 
 }
 
+/* Task 3*/
+
+#name-input {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  width: 360px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin: 16px 0;
+}
+
+#name-output, h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.04em;
+}
