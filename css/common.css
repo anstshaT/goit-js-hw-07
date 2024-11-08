@@ -160,3 +160,34 @@ label {
 }
 
 
+/* Task 5*/
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;
+  width: 345px;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.widget p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.widget .change-color {
+  background-color: #4E75FF;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  width: 148px;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
