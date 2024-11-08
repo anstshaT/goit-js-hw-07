@@ -157,8 +157,12 @@ label {
   color: #FFFFFF;
   cursor: pointer;
   margin-top: 8px;
+  transition: background-color 250ms linear;
 }
 
+.login-form button:hover {
+  background-color: #6C8CFF;
+}
 
 /* Task 5*/
 
@@ -190,4 +194,79 @@ label {
   border-radius: 8px;
   color: #FFFFFF;
   cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.change-color:hover {
+  background-color: #6C8CFF;
+}
+
+
+/* Task 6*/
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 486px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.input {
+  width: 150px;
+  padding: 8px 25px;
+  background-color: transparent;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.btn-create {
+  width: 120px;
+  padding: 8px 16px;
+  background-color: #4E75FF;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.btn-create:hover {
+  background-color: #6C8CFF;
+}
+
+.btn-destroy {
+  width: 120px;
+  padding: 8px 16px;
+  background-color: #FF4E4E;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.btn-destroy:hover {
+  background-color: #FF7070;
+}
+
+#boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 44px;
+  flex-wrap: wrap;
+  row-gap: 16px;
 }
