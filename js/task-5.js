@@ -5,8 +5,9 @@ const spanEl = document.querySelector(".color");
 changeColBtn.addEventListener("click", handelBtn);
 
 function handelBtn() {
-  backgroundBody.style.backgroundColor = getRandomHexColor();
-  spanEl.textContent = getRandomHexColor();
+  const color = getRandomHexColor();
+  backgroundBody.style.backgroundColor = color;
+  spanEl.textContent = color;
 }
 
 
